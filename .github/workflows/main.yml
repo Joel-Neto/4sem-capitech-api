@@ -111,12 +111,12 @@ jobs:
 
       - name: Criar imagem docker
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/capitech-back:${{ env.new_version }} .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/Capitech-back:${{ env.new_version }} .
 
-          docker tag ${{ secrets.DOCKERHUB_USERNAME }}/capitech-back:${{ env.new_version }} ${{ secrets.DOCKERHUB_USERNAME }}/capitech-back:latest
+          docker tag ${{ secrets.DOCKERHUB_USERNAME }}/Capitech-back:${{ env.new_version }} ${{ secrets.DOCKERHUB_USERNAME }}/Capitech-back:latest
 
       - name: Efetuar push da imagem
         run: |
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/capitech-back:${{ env.new_version }}
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/capitech-back:latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/Capitech-back:${{ env.new_version }}
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/Capitech-back:latest
 
