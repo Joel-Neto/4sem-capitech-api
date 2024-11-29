@@ -7,6 +7,7 @@ export interface CreateAndUpdateTrailProps {
   video_description?: string;
   name?: string;
   references?: string;
+  iframe_references?: string;
   subtitle?: string;
   video_title?: string;
 }
