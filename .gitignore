@@ -43,6 +43,6 @@ typings/
 build/
 tmp/
 temp/
-dist/
+# dist/
 
 .DS_Store
